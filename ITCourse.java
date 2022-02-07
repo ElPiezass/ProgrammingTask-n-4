@@ -55,6 +55,16 @@ public class ITCourse extends OnlineCourse{
         return comp;
     }
     
+    public void setSpecialization(String sp){
+        if(checkSpecialization(sp)){
+            specialization=sp;
+        }
+    }
+    
+    public String getSpecialization(){
+        return specialization;
+    }
+    
     public String toString(){
         return "This " + getName() + " ITCourse, of" + specialization + "with ID " + getID() + " have a duration of " + getDuration() + " hours, imparted with the teacher " + getTeacher();
     }
