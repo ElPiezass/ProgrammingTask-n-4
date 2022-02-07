@@ -7,6 +7,28 @@ public abstract class OnlineCourse {
     private String name, ID, teacher;
     private int duration;
     
+    public OnlineCourse(){
+        setName("");
+        setID("");
+        setTeacher("");
+        setDuration(0);
+    }
+    
+    public OnlineCourse(String na, String i, String te, int du){
+        setName(na);
+        setID(i);
+        setTeacher(te);
+        setDuration(du);
+    }
+    
+    public OnlineCourse(OnlineCourse other){
+        setName(other.getName());
+        setID(other.getID());
+        setTeacher(other.getTeacher());
+        setDuration(other.getDuration());
+    }
+    
+    
     public boolean checkName(String na){
         boolean comp=false;
         
