@@ -22,7 +22,7 @@
     
     public BusinessCourse clone(){
         BusinessCourse clon;
-        clon = new BusinessCourse();
+        clon = new BusinessCourse(this);
         return clon;
     }
     
