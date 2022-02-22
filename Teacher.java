@@ -60,7 +60,7 @@ public class Teacher extends Person{
     }
     
     public String toString(){
-        return "This teacher teaches a " + this.teach.toString + " class with this students " + this.class.toString() + " ")};
+        return "This teacher teaches a " + this.teach.toString + " class with this nº students " + this.tam)};
     }
         
     public Teacher clone(){
